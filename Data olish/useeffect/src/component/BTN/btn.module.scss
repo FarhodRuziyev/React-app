@@ -1,0 +1,22 @@
+.btn{
+    width: 20%;
+    height: 40px;
+    background-color: rgb(241, 78, 9);
+    color: black;
+    border: 0.0px solid white;
+    box-shadow: 9px 7px 10px white;
+    &:hover{
+        color: white;
+        box-shadow: 4px 5px 0px white;
+        
+    }
+    @media(max-width:1000px){
+        font-size: 0.8rem;
+        width: 28%;
+        height: 35px;
+    }
+    @media(max-width:800px){
+        font-size: 0.7rem;
+        width: 38%;
+    }
+}   

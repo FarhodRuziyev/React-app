@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  background-color: green;
+  color: white;
+  a {
+    color: inherit;
+  }
+  ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+}

@@ -1,0 +1,23 @@
+.ekran{
+    background-image: url(../../../public/assets/img/IMAGE11.png);
+
+    & .container2{
+        width: 80%;
+        margin: 0 auto;
+        padding: 4rem 0;
+        & .potery{
+            width: 45%;
+            display: flex;flex-direction: column;  row-gap: 20px;
+            @media(max-width: 1050px){
+                width: 57%;
+            }
+            @media(max-width: 800px){
+                width: 76%;
+            }
+            @media(max-width: 630px){
+                width: 90%;
+            }
+        }
+        
+    }
+}

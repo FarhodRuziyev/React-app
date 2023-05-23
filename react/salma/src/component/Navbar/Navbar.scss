@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;grid-template-columns: 2fr 3fr; align-self: center;
+    @media(max-width:650px){
+        display: flex; justify-content: space-between;align-items: center;
+    }
+    & a{
+        color: black;
+        & i{
+            display: flex;
+            background-color: black;
+            padding: 0 0.001rem;
+        }
+        &:hover{
+            color: red;
+        }
+    }
+    input{
+        display: none;
+        @media(max-width:650px){
+            &:checked + .ulla{
+                left: 0;
+            }
+            
+        }
+    }
+
+    label{
+       display: none; 
+       @media(max-width:650px){
+        display: block;
+        color: white;
+       }
+    }
+    #menyu{
+        color: black;
+    }
+    .ulla{
+        display: flex;align-items: center; justify-content: flex-end; gap: 5%;
+        transition: 0.5s;
+        @media(max-width:800px){
+            & a{
+                font-size: 0.9rem;
+            }
+        }
+        @media(max-width:650px){
+            position: fixed;
+            top: 4rem;
+            bottom: 0;
+            left: -100%;    
+            background-color: rgb(40, 40, 100);
+            width: 100%;
+            // margin: 0 auto;
+            // height: calc(100vh - 75px);
+            display: flex; flex-direction: column; align-items: center;
+            & a{
+                color: white;
+            }
+        }
+    }
+  }
+  .Navbar{
+    max-width: 1400px;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+  }
+ 
+
+  

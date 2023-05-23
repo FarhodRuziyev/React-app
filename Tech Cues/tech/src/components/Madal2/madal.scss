@@ -1,0 +1,32 @@
+.forcha{
+    width: 100%;
+    display: flex; flex-direction: column; row-gap: 1rem;
+    & .inputt{
+        width: 100%;
+        & input{
+            text-align: center;
+            outline: none;
+            border: none;
+            width: 100%;
+            height: 3rem;
+            border-radius: 5px;
+        }
+    }
+    & .battin{
+        width: 100%;
+        & button{
+            background-color: #5C5CFF;
+            width: 100%;
+            height: 3rem;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 0 2rem;
+            &:hover{
+                background-color: rgb(124, 197, 219);
+            }
+            
+        }
+    }
+    
+}

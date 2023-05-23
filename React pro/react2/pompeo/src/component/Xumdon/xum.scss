@@ -1,0 +1,21 @@
+.container{
+    padding: 6rem 0;
+    width: 80%;
+    margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 15%; align-items: center;
+    // background-color: navy;
+    & .xum1{
+        & img{
+            width: 100%;
+        }
+    }
+    & a{
+        color: black;
+        &:hover{
+            color: red;
+        }
+    }
+    @media(max-width: 650px){
+        display: flex; flex-direction: column-reverse;
+    }
+}

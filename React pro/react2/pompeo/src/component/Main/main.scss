@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.mainone{
+    max-width: 1440px;
+    width: 100%;
+    & .container{
+        width: 80%;
+        display: flex; flex-direction: column; row-gap: 90px;
+        margin: 0 auto;
+        padding: 4rem 0;
+        & .sarlavha{
+            text-align: center;
+            & h5{
+                color: #D77474;
+            }
+        }
+        & .kolleksiya{
+            & img{
+                width: 100%;
+            }
+            display: flex; align-items: center; gap: 16%;
+            @media(max-width:800px){
+                gap: 10%;
+            }
+            @media(max-width:600px){
+                flex-direction: column; row-gap: 30px;
+            }
+        }
+        & .sarlavha2{
+            display: flex; gap: 14%;
+            @media(max-width:650px){
+                flex-direction: column; row-gap: 40px;
+            }
+            & .pikki{
+                font-size: 1rem;
+                @media(max-width: 1000px){
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

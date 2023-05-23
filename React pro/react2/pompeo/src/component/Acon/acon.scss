@@ -1,0 +1,12 @@
+.ikon{
+    text-align: center;
+    display: flex;flex-direction: column; row-gap: 25px;
+    & a{
+        font-size: 1rem;
+        @media(max-width: 850px){
+            font-size: 0.9rem;
+        }
+        
+    }
+
+}

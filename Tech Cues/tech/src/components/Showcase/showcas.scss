@@ -1,0 +1,74 @@
+.container{
+    padding: 5rem 0;
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    @media(max-width:700px){
+        padding: 3rem 0;
+    }
+    & .card{
+        position: relative;
+        display: grid;grid-template-columns: 1fr 1fr; 
+        border-left: 5px solid  rgb(105, 105, 223) ;
+        background-color: white;
+        @media(max-width:500px){
+            grid-template-columns: 1fr;
+            border: none;
+        }
+        & .cardtext{
+            display: flex; flex-direction: column; justify-content: center;
+            border: 1px solid rgba(107, 107, 199, 0.402);
+            padding: 0 3rem;
+            @media(max-width: 750px){
+                padding:0 2rem;  
+            }
+            @media(max-width: 550px){
+                padding:0 1rem;  
+            }
+            @media(max-width: 500px){
+                padding:3rem  1rem;  
+            }
+        }
+        & .cardimg{
+            & img{
+                width: 100%;
+               
+            }
+        }
+        & .pozbott{
+            width: 30%;
+            position: absolute;
+            z-index: -10;
+            left: -7%;
+            bottom: -15%;
+            & img{
+                width: 100%;
+            }
+            @media(max-width: 1000px){
+                bottom: -15%;
+            }
+            @media(max-width: 800px){
+                bottom: -12%;
+            }
+            @media(max-width: 500px){
+                bottom: -6%;
+            }
+    
+        }
+    }
+    & .poztop{
+        width: 30%;
+        position: absolute;
+        z-index: -10;
+        top: 10%;
+        right: -7%;
+        & img{
+            width: 100%;
+        }
+        @media(max-width:700px){
+            top: 6%;
+        }
+    }
+    
+}

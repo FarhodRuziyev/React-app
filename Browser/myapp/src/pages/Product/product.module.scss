@@ -1,0 +1,33 @@
+.product{
+  
+  width: 100%;
+  .cardd{
+    padding: 2rem;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5%; align-items: center;
+    @media(max-width:900px){
+      display: grid; grid-template-columns: 1fr; gap: 5%; align-items: center;
+    }
+    .img{
+      padding:2rem;
+      background-color: white;
+      border-radius: 5px;
+    }
+    .text{
+      display: flex;flex-direction: column; row-gap: 10px;
+    }
+    .titl{
+      color: green;
+    }
+    .categ{
+      color: blue;
+    }
+    .p{
+      color: red;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  
+}

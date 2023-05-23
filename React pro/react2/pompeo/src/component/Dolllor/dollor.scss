@@ -1,0 +1,12 @@
+a{
+    color: black;
+    &:hover{
+        color: #D77474;
+    }
+    @media(max-width: 1000px){
+        font-size: 0.9rem;
+    }
+    @media(max-width: 500px){
+        font-size: 0.8rem;
+    }
+}

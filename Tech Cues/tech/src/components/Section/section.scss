@@ -1,0 +1,36 @@
+.container5{
+    padding: 4rem 0;
+    width: 80%;
+    margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5%;
+    @media(max-width:800px){
+        grid-template-columns: 1fr; 
+    }
+    & .lastmodal{
+        background-color: #111131;
+        border-radius: 7px;
+        padding: 2rem;
+        display: flex; flex-direction: column; gap: 20%;
+        text-align: center;
+        & .modal{
+            font-size: 0.8rem;
+            color: white;
+        }
+    }
+    & .stext{
+        & p{
+            font-size: 0.8rem;
+        }
+        & h3{
+            font-size: 1.2rem;
+            @media(max-width: 1000px){
+                font-size: 0.9rem;  
+            }
+        }
+    }
+    & .slider{
+        padding: 2rem 0;
+        border-bottom: 1px solid blue;
+        display: flex; align-items: center; justify-content: space-between;
+    }
+}

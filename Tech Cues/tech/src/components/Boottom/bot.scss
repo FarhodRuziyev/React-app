@@ -1,0 +1,12 @@
+.bottom{
+    padding: 2rem 0;
+    background-color: #ABABFA;
+    & .container8{
+        width: 80%;
+        margin: 0 auto;
+        display: flex; align-items: center; gap: 4%;
+        @media(max-width:850px){
+            flex-direction: column; row-gap: 3%;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.hom{
+    background-image: url('../../../public/assets/img/BG.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 5.4rem);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}

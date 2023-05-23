@@ -1,0 +1,19 @@
+.Btn{
+    background-color: rgba(159, 185, 185, 0.061);
+    width: 230px;
+    height: 50px;
+    font-size: 1rem;
+    color: rgb(129, 127, 127);
+    border: 0.3px solid lightblue;
+    &:hover{
+        background-color: #AC1313;
+        color: white;
+    }
+    @media(max-width: 900px){
+        font-size: 0.9rem;
+        width: 190px;
+    }
+    @media(max-width: 600px){
+        font-size: 0.8rem;
+    }
+}

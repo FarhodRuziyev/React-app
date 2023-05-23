@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: sticky;
+    z-index: 750;
+    top: 0;
+    max-width: 1400px;
+    padding: 0 3rem;
+    height: 4rem;
+    background-color: aquamarine;
+    display: grid; grid-template-columns: 2fr 1fr; gap: 8%;
+    box-shadow: 0rem 0rem 2rem rgb(43, 43, 43);
+    @media(max-width:900px){
+        grid-template-columns: 1fr;
+    }
+    & .navleft{
+        display: flex; align-items: center; gap: 3%;
+        @media(max-width:900px){
+            width: 100%;
+            padding-right: 2rem;
+            display:flex; align-items: center; justify-content: space-between;
+        }
+        & .logo{
+            & img{
+                width: 100%;
+
+            }
+        }
+        & label{
+            display: none;
+            @media(max-width: 700px){
+                display: block;
+            }
+        }
+        & input{
+            display: none;
+            @media(max-width: 700px){
+                &:checked + .ulla{
+                    left: 0;
+                }
+            }
+        }
+        & .ulla{
+            display: flex;align-items: center; gap: 9%;
+            transition: 0.5s;
+            & .lii{
+                display: flex; align-items: center; gap: 7%;
+            }
+            & a{
+                color: black;
+                font-size: 1.2rem;
+                &:hover{
+                    color: rgb(84, 84, 207);
+                }
+                @media(max-width: 1000px){
+                    font-size: 1rem;
+                }
+            }
+            @media(max-width: 700px){
+                position: fixed;
+                bottom: 0;
+                left: -100%;
+                top: 4rem;
+                display: flex; flex-direction: column; align-items: center; justify-content: center; row-gap: 20px;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(75, 238, 184);
+            }
+        }
+    }
+    & .navright{
+        display: flex;
+        @media(max-width: 900px){
+            display: none;
+        }
+        & .forma{
+            width: 100%;
+            display: flex; align-items: center; justify-content: flex-end;
+            & .inpt{
+                width: 100%;
+                position: relative;
+                & .lupa{
+                    position: absolute;
+                    top: 30%;
+                    right: 7%;
+                    font-size: 1.5rem;
+                    @media(max-width: 1000px){
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            & input{
+                outline: none;
+                border: none;
+                background-color:aquamarine;
+                width: 100%;
+                min-width: 160px;
+                height: 3rem;
+                padding-left: 1rem;
+            }
+            & button{
+                background-color: #5C5CFF;
+                width: 100%;
+                height: 3rem;
+                outline: none;
+                border: none;
+                padding: 0 2rem;
+                &:hover{
+                    background-color: rgb(124, 197, 219);
+                }
+                
+            }
+        }
+    }
+}
